@@ -15,35 +15,30 @@ Olimpia Milano - Cantù | 55-60 -->
 <?php
     $matches = [
          [
-            "olimpia milano",
-            "cantù",
-             55,
-            60
+            "ospite" => "olimpia milano",
+            "casa" => "cantù",
+            "punti ospite" => 55,
+            "punti casa" => 60
         ],
         [
-           "Los Angeles Lakers",
-            "Chicago Bulls",
-             70,
-             68
+            "ospite" => "Los Angeles Lakers",
+            "casa" => "Chicago Bulls",
+            "punti ospite" => 70,
+            "punti casa" => 68
         ],
         [
-            "Philadelphia",
-            "Cleveland",
-             80,
-             75
+            "ospite" => "Philadelphia",
+            "casa" => "Cleveland",
+            "punti ospite" => 80,
+            "punti casa" => 75
         ],
 
     ];
 
-    
   
 for ($i = 0; $i < count($matches); $i++) {
-    for ($a = 0; $a < 4; $a++) {
-        echo $matches[$i][$a]."-";
-        
-        
-    }
-     echo "<br>";
+    echo $matches[$i]["ospite"]."-".$matches[$i]["casa"]."|".$matches[$i]["punti ospite"]."-".$matches[$i]["punti casa"];
+    echo"<br>";
 };
 
 
